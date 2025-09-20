@@ -35,4 +35,6 @@ print(f"Time saved by accelerated algorithm: {(t1 - t0) - (t2 - t1):.6f} s")
 
 # Citation
 If you use this code in your research or projects, please cite:
+```
 Liu, X., Iturburu, L., Dyke, S. J., Lenjani, A., Ramirez, J., & Zhang, X. (2022). Information fusion to automatically classify post-event building damage state. Engineering Structures, 253, 113765.
+```
