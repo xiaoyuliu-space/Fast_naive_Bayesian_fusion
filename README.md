@@ -7,6 +7,7 @@ using a Naive Bayesian–style algorithm. It includes both:
 - **Accelerated fusion** (sampling-based, much faster for large lists).
 
 # Example Usage
+'''
 from fuse_probabilities import fuse_probabilities
 import numpy as np
 import time
@@ -28,3 +29,4 @@ print("Accelerated fused probability:", result_accel)
 print(f"Exact time      : {t1 - t0:.6f} s")
 print(f"Accelerated time: {t2 - t1:.6f} s")
 print(f"Time saved by accelerated algorithm: {(t1 - t0) - (t2 - t1):.6f} s")
+'''
