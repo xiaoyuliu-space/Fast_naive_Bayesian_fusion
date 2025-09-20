@@ -12,8 +12,8 @@ from fuse_probabilities import fuse_probabilities
 import numpy as np
 import time
 
-# Generate a random input list of 20 probabilities
-input_list = np.random.rand(20).tolist()
+# Generate a random input list of 25 probabilities
+input_list = np.random.rand(25).tolist()
 
 # Exact fusion
 t0 = time.perf_counter()
@@ -30,7 +30,18 @@ print(f"Exact time      : {t1 - t0:.6f} s")
 print(f"Accelerated time: {t2 - t1:.6f} s")
 print(f"Time saved by accelerated algorithm: {(t1 - t0) - (t2 - t1):.6f} s")
 ```
-
+## Example Output
+```
+Exact fused: 0.9999998894326695
+Accelerated fused: 0.9395948324569728
+Exact time      : 87.626295 s
+Accelerated time: 0.001055 s
+Time saved by accelerated algorithm: 87.625239 s
+```
+⚡ Note: This output was generated using a list of 25 elements.
+The exact algorithm takes ~88 seconds because it evaluates 2^25 ≈ 33 million subsets.
+The accelerated algorithm runs almost instantly.
+👉 As the number of elements increases, the time saved by the accelerated method grows exponentially.
 
 ## Citation
 If you use this code in your research or projects, please cite:
