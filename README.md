@@ -40,7 +40,7 @@ Time saved by accelerated algorithm: 87.625239 s
 ```
 ⚡ Note: This output was generated using a list of 25 elements.
 The exact algorithm takes ~88 seconds because it evaluates 2^25 ≈ 33 million subsets.
-The accelerated algorithm runs almost instantly.
+The accelerated algorithm runs almost instantly.\
 👉 As the number of elements increases, the time saved by the accelerated method grows exponentially.
 
 ## Citation
