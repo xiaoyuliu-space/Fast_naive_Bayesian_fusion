@@ -1,7 +1,6 @@
-## Naive Bayesian Probability Fusion
+## Accelerated Naive Bayesian Probability Fusion
 
-This repository provides a Python implementation of **probability fusion** 
-using a Naive Bayesian–style algorithm. It includes both:
+This repository provides a Python implementation of an accelerated Naive Bayesian probability fusion algorithm. It includes both:
 
 - **Exact fusion** (enumerates all combinations).
 - **Accelerated fusion** (sampling-based, much faster for large lists).
