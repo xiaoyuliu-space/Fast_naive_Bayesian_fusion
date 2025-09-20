@@ -1,5 +1,4 @@
-
-# Naive Bayesian Probability Fusion
+## Naive Bayesian Probability Fusion
 
 This repository provides a Python implementation of **probability fusion** 
 using a Naive Bayesian–style algorithm. It includes both:
